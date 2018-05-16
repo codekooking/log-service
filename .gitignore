@@ -26,3 +26,6 @@
 
 ### OS ###
 .DS_Store
+
+### Docker ###
+/docker/.env
