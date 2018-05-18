@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "6e45268a-3a90-47f4-9dae-4b9ff47fad24",
+		"name": "Springboot-RabbitMQ-ELK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/log/send-message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "orderNumber",
+							"value": "0987654321",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "productId",
+							"value": "1234567890",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "20000",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/log/send-message",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"log",
+						"send-message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
